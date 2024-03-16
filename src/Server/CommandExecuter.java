@@ -1,0 +1,140 @@
+package Server;
+
+import Objects.exceptions.*;
+import Server.Commands.*;
+import Server.FileManagement.FileReaderer;
+import Server.FileManagement.LineReader;
+import Server.Terminal.CommandArray;
+import Server.Terminal.CommandMaker;
+import Server.Terminal.CommandOutput;
+import Server.Terminal.Terminal;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class CommandExecuter {
+    private Boolean isRunning;
+    private Storage storage;
+    private CommandArray commandArray;
+    private CommandMaker commandMaker;
+    private FileReaderer lineReader;
+    private Terminal terminal;
+    public CommandExecuter(Terminal terminal, FileReaderer lineReader)
+    {
+        this.terminal=terminal;
+        this.lineReader=lineReader;
+        this.commandMaker= new CommandMaker(terminal, lineReader,this);
+        this.commandArray = new CommandArray();
+        this.commandArray.addCommand(new String[]{"exit"}, new Exit());
+        this.commandArray.addCommand(new String[]{"help"}, new Help());
+        this.commandArray.addCommand(new String[]{"add"}, new Add());
+        this.commandArray.addCommand(new String[]{"write"}, new OutputCommand());
+        this.commandArray.addCommand(new String[]{"show"}, new Show());
+        this.commandArray.addCommand(new String[]{"save"}, new Save());
+        this.commandArray.addCommand(new String[]{"info"}, new Info());
+        this.commandArray.addCommand(new String[]{"update"}, new Update());
+        this.commandArray.addCommand(new String[]{"execute_script"}, new Execute_script());
+        this.commandArray.addCommand(new String[]{"remove_by_id"}, new Remove_by_id());
+        this.commandArray.addCommand(new String[]{"clear"}, new Clear());
+        this.commandArray.addCommand(new String[]{"remove_first"}, new Remove_first());
+        this.commandArray.addCommand(new String[]{"remove_greater"}, new Remove_greater());
+        this.commandArray.addCommand(new String[]{"remove_all_by_car_code"}, new Remove_all_by_car_code());
+        this.commandArray.addCommand(new String[]{"sum_of_car_code"}, new Sum_of_car_code());
+        this.commandArray.addCommand(new String[]{"count_greater_than_capital"}, new Count_greater_than_capital());
+    }
+
+    public Storage getStorage() {
+        return storage;
+    }
+    public void setStorage(Storage storage)
+    {
+        this.storage=storage;
+    }
+
+    public CommandOutput execute(Command command) throws FileNotFoundException {
+        CommandOutput output = command.execute();
+        return output;
+    }
+    private String getLine() throws IOException {
+        return lineReader.readLine();
+    }
+    public Command makeCommand()
+    {
+        Command command = null;
+        ArrayList<String> commandLine = null;
+        while (command == null && isRunning) {
+            String commandContents = null;
+            try {
+                commandContents = this.getLine();
+            } catch (IOException e) {
+                isRunning=false;
+                throw new RuntimeException(e);
+            }
+            if(commandContents==null) isRunning=false;
+            if(isRunning)
+                commandLine = new ArrayList<>(Arrays.asList(commandContents.split(" +")));
+            try {
+                command = (Command) commandArray.get(commandLine.get(0)).getClass().getConstructor().newInstance();
+            } catch (Exception e) {
+                if(isRunning) {
+                    command = null;
+                    System.out.println("ti lox");
+                }
+            }
+        }
+        commandLine.remove(0);
+        try {
+            if(isRunning)
+                this.commandMaker.addParams(command, commandLine);
+        } catch (CoordinatesException e) {
+            throw new RuntimeException(e);
+        } catch (AreaException e) {
+            throw new RuntimeException(e);
+        } catch (GovernmentException e) {
+            throw new RuntimeException(e);
+        } catch (GovernorException e) {
+            throw new RuntimeException(e);
+        } catch (HeightException e) {
+            throw new RuntimeException(e);
+        } catch (CarCodeException e) {
+            throw new RuntimeException(e);
+        } catch (PopulationException e) {
+            throw new RuntimeException(e);
+        } catch (NameCityException e) {
+            throw new RuntimeException(e);
+        } catch (CapitalException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            System.out.println("sssssssnake");
+        }
+        return command;
+    }
+    public void startSession()
+    {
+        this.isRunning=true;
+        Command command = null;
+        while (isRunning)
+        {
+            try {
+                command = makeCommand();
+                CommandOutput commandOutput=new CommandOutput(new ArrayList<>());
+                if(isRunning)
+                    commandOutput = command.execute();
+                for(String line : commandOutput.getResponse())
+                    this.terminal.writeLine(line);
+            }
+            catch (RuntimeException | FileNotFoundException e)
+            {
+                this.terminal.writeLine(e.getMessage());
+                this.terminal.writeLine("command not understood");
+            }
+        }
+        try {
+            this.lineReader.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

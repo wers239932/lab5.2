@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lab5.2:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lab5_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Government.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/AreaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/ArgumentCityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/CapitalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/CarCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/CoordinatesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/GovernmentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/GovernorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/HeightException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/IncorrectDataExceptoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/NameCityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/exceptions/PopulationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/CommandExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Clear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Count_greater_than_capital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Execute_script.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Help.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/OutputCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_all_by_car_code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_by_id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_first.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_greater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_lower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Save.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Sum_of_car_code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/CSVLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/CSVSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/CommandFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/FileReaderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/FileSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/LineReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/SaveFileReader_useless.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/FileManagement/StorageLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Terminal/ArgumentCheker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Terminal/CommandArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Terminal/CommandMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Terminal/CommandOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Terminal/Terminal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/savefile.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2dE6a2kWWRYbTpGE9Ns7qiPQcVD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/vladimir/Desktop/итмо/прога/программирование/лаба 5/lab5.2",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2\src\Server\FileManagement" />
+      <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2\src\Objects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Server.Terminal" />
+      <recent name="Server.Commands" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SAVEFILE" value="src/savefile.csv" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="lab5.2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="" />
+      <created>1709560954246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709560954246</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

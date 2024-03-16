@@ -1,0 +1,5 @@
+id,name,coordinate_x,coordinate_y,creationDate,area,population,metersAboveSeaLevel,capital,carCode,government,governor_birthday
+
+1171430350,1,1.0,1,2024-03-15T12:45:12.385611300+03:00[Europe/Moscow],1,1,1.0,false,1,CORPORATOCRACY,1111-11-11T11:11:11
+297540708,gey,1.0,1,2024-03-16T12:47:26.651050600+03:00[Europe/Moscow],1,1,1.0,false,1,PATRIARCHY,1111-11-11T11:11:11
+35709901,imba,239.0,239,2024-03-16T12:49:21.432426700+03:00[Europe/Moscow],239,239,239.0,true,239,PATRIARCHY,9999-01-01T00:00
