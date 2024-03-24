@@ -1,6 +1,6 @@
 package Server.FileManagement;
 
-import Objects.exceptions.*;
+import Objects.Exceptions.*;
 import Server.Storage;
 
 import java.io.IOException;

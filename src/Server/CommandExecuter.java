@@ -1,9 +1,8 @@
 package Server;
 
-import Objects.exceptions.*;
+import Objects.Exceptions.*;
 import Server.Commands.*;
 import Server.FileManagement.FileReaderer;
-import Server.FileManagement.LineReader;
 import Server.Terminal.CommandArray;
 import Server.Terminal.CommandMaker;
 import Server.Terminal.CommandOutput;
@@ -27,22 +26,7 @@ public class CommandExecuter {
         this.lineReader=lineReader;
         this.commandMaker= new CommandMaker(terminal, lineReader,this);
         this.commandArray = new CommandArray();
-        this.commandArray.addCommand(new String[]{"exit"}, new Exit());
-        this.commandArray.addCommand(new String[]{"help"}, new Help());
-        this.commandArray.addCommand(new String[]{"add"}, new Add());
-        this.commandArray.addCommand(new String[]{"write"}, new OutputCommand());
-        this.commandArray.addCommand(new String[]{"show"}, new Show());
-        this.commandArray.addCommand(new String[]{"save"}, new Save());
-        this.commandArray.addCommand(new String[]{"info"}, new Info());
-        this.commandArray.addCommand(new String[]{"update"}, new Update());
-        this.commandArray.addCommand(new String[]{"execute_script"}, new Execute_script());
-        this.commandArray.addCommand(new String[]{"remove_by_id"}, new Remove_by_id());
-        this.commandArray.addCommand(new String[]{"clear"}, new Clear());
-        this.commandArray.addCommand(new String[]{"remove_first"}, new Remove_first());
-        this.commandArray.addCommand(new String[]{"remove_greater"}, new Remove_greater());
-        this.commandArray.addCommand(new String[]{"remove_all_by_car_code"}, new Remove_all_by_car_code());
-        this.commandArray.addCommand(new String[]{"sum_of_car_code"}, new Sum_of_car_code());
-        this.commandArray.addCommand(new String[]{"count_greater_than_capital"}, new Count_greater_than_capital());
+        CommandSetter.setCommands(commandArray);
     }
 
     public Storage getStorage() {

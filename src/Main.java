@@ -1,4 +1,4 @@
-import Objects.exceptions.*;
+import Objects.Exceptions.*;
 import Server.CommandExecuter;
 import Server.FileManagement.CSVLoader;
 import Server.Storage;
@@ -7,7 +7,6 @@ import Server.Terminal.Terminal;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, IOException, NameCityException, CapitalException {

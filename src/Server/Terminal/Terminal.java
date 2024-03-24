@@ -1,18 +1,9 @@
 package Server.Terminal;
 
-import Objects.exceptions.*;
-import Server.CommandExecuter;
-import Server.Commands.Command;
-import Server.Commands.Exit;
-import Server.Commands.Help;
 import Server.FileManagement.FileReaderer;
-import Server.FileManagement.LineReader;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Terminal implements FileReaderer {

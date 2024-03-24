@@ -1,8 +1,8 @@
-package Objects.exceptions;
+package Objects.Exceptions;
 
 /**
  * Абстрактный класс обибок при вводе неверных типов данных при создании объекта типа City
- * @see 
+ * @see
  * @author vladimir
  */
 

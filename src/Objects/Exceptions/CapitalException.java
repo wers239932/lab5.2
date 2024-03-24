@@ -1,4 +1,4 @@
-package Objects.exceptions;
+package Objects.Exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку со столицей
  * @see

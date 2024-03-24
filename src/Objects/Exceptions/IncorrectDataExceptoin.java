@@ -1,4 +1,4 @@
-package Objects.exceptions;
+package Objects.Exceptions;
 
 public class IncorrectDataExceptoin extends RuntimeException{
     public IncorrectDataExceptoin(String msg){
