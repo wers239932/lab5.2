@@ -2,6 +2,7 @@ package Server;
 
 import Server.Commands.*;
 import Server.Terminal.CommandArray;
+import Server.Terminal.CommandMaker;
 
 public class CommandSetter {
     public static void setCommands(CommandArray commandArray)
@@ -22,5 +23,9 @@ public class CommandSetter {
         commandArray.addCommand(new String[]{"remove_all_by_car_code"}, new Remove_all_by_car_code());
         commandArray.addCommand(new String[]{"sum_of_car_code"}, new Sum_of_car_code());
         commandArray.addCommand(new String[]{"count_greater_than_capital"}, new Count_greater_than_capital());
+    }
+    public void addCommand(Command command, CommandArray commandArray, String[] names)
+    {
+        commandArray.addCommand(names, command);
     }
 }

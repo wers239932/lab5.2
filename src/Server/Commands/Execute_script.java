@@ -1,6 +1,5 @@
 package Server.Commands;
 
-import Objects.City;
 import Server.CommandExecuter;
 import Server.FileManagement.CommandFileReader;
 import Server.FileManagement.FileReaderer;
@@ -52,7 +51,7 @@ public class Execute_script extends Command{
         commandExecuter.setStorage(storage);
         commandExecuter.startSession();
         try {
-            this.fileReaderer.close();
+            this.fileReaderer.closeStream();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

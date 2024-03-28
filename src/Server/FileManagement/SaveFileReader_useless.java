@@ -51,7 +51,7 @@ public class SaveFileReader_useless implements FileReaderer{
         return args;
     }
     @Override
-    public void close() throws IOException {
+    public void closeStream() throws IOException {
         reader.close();
     }
 }

@@ -1,12 +1,13 @@
 package Server.Terminal;
 
 import Server.FileManagement.FileReaderer;
+import Server.FileManagement.LineReader;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Terminal implements FileReaderer {
+public class Terminal implements LineReader {
     public Boolean running;
     private Scanner sc;
     public void writeLine(String line)
@@ -23,10 +24,7 @@ public class Terminal implements FileReaderer {
     /**
      * @throws FileNotFoundException
      */
-    @Override
-    public void openFile() throws FileNotFoundException {
 
-    }
 
     @Override
     public String readLine()
@@ -38,7 +36,7 @@ public class Terminal implements FileReaderer {
      * @throws IOException
      */
     @Override
-    public void close() throws IOException {
+    public void closeStream() throws IOException {
         sc.close();
     }
 

@@ -48,7 +48,7 @@ public class CommandFileReader implements FileReaderer{
      * @throws IOException
      */
     @Override
-    public void close() throws IOException {
+    public void closeStream() throws IOException {
         reader.close();
     }
 }

@@ -9,5 +9,5 @@ public interface FileReaderer extends LineReader{
 
     String readLine() throws IOException;
 
-    void close() throws IOException;
+    void closeStream() throws IOException;
 }

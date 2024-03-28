@@ -3,6 +3,7 @@ package Server;
 import Objects.Exceptions.*;
 import Server.Commands.*;
 import Server.FileManagement.FileReaderer;
+import Server.FileManagement.LineReader;
 import Server.Terminal.CommandArray;
 import Server.Terminal.CommandMaker;
 import Server.Terminal.CommandOutput;
@@ -18,9 +19,9 @@ public class CommandExecuter {
     private Storage storage;
     private CommandArray commandArray;
     private CommandMaker commandMaker;
-    private FileReaderer lineReader;
+    private LineReader lineReader;
     private Terminal terminal;
-    public CommandExecuter(Terminal terminal, FileReaderer lineReader)
+    public CommandExecuter(Terminal terminal, LineReader lineReader)
     {
         this.terminal=terminal;
         this.lineReader=lineReader;
@@ -116,7 +117,7 @@ public class CommandExecuter {
             }
         }
         try {
-            this.lineReader.close();
+            this.lineReader.closeStream();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
