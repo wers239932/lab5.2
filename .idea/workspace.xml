@@ -6,42 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="fixed checkers for inputting an object">
-      <change afterPath="$PROJECT_DIR$/script1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script2" afterDir="false" />
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="some more shit">
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingCommandExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingTerminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Objects/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects/Government.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Government.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/CommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/CommandExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Count_greater_than_capital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Count_greater_than_capital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Execute_script.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Execute_script.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/OutputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/OutputCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_all_by_car_code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_all_by_car_code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_by_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_by_id.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_first.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_first.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_greater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_greater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_lower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_lower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Sum_of_car_code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Sum_of_car_code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/FileManagement/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/FileManagement/CSVLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Terminal/ArgumentCheker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Terminal/ArgumentCheker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Terminal/ArgumentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Terminal/ArgumentValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Terminal/CommandMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Terminal/CommandMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Terminal/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Terminal/Terminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/savefile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/savefile.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -103,8 +75,8 @@
       <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Server.Terminal" />
       <recent name="Server.Commands" />
+      <recent name="Server.Terminal" />
       <recent name="" />
     </key>
   </component>
@@ -155,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711649909326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some more shit">
+      <created>1711703703979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711703703979</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -188,6 +167,7 @@
     <MESSAGE value="smth" />
     <MESSAGE value="1st fix, made a class that fills command array" />
     <MESSAGE value="fixed checkers for inputting an object" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed checkers for inputting an object" />
+    <MESSAGE value="some more shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="some more shit" />
   </component>
 </project>

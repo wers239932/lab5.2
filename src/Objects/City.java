@@ -21,11 +21,29 @@ public class City implements Comparable<City>{
      * @see Coordinates
      */
     private Coordinates coordinates; //Поле не может быть null
+    /**
+     * дата создания объекта
+     */
     private ZonedDateTime creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически
+    /**
+     * площадь города
+     */
     private Long area; //Значение поля должно быть больше 0, Поле не может быть null
+    /**
+     * население
+     */
     private int population; //Значение поля должно быть больше 0
+    /**
+     * высота над уровнем моря, должно быть больше 0
+     */
     private double metersAboveSeaLevel;
+    /**
+     * наличие столицы
+     */
     private Boolean capital; //Поле может быть null
+    /**
+     * carCode, некоторое поле, больше 0, меньше 1001
+     */
     private Long carCode; //Значение поля должно быть больше 0, Максимальное значение поля: 1000, Поле может быть null
     /**
      * @see Government
@@ -166,6 +184,20 @@ public class City implements Comparable<City>{
         return diff;
     }
 
+    /**
+     * парсит набор строк в город
+     * @param args
+     * @return
+     * @throws CoordinatesException
+     * @throws NameCityException
+     * @throws AreaException
+     * @throws PopulationException
+     * @throws HeightException
+     * @throws CapitalException
+     * @throws CarCodeException
+     * @throws GovernmentException
+     * @throws GovernorException
+     */
     public static City parseCity(String[] args) throws CoordinatesException, NameCityException, AreaException, PopulationException, HeightException, CapitalException, CarCodeException, GovernmentException, GovernorException {
         if(args.length!=12)
         {
