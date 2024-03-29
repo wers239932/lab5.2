@@ -1,15 +1,13 @@
-import Objects.Exceptions.*;
-import Server.CommandExecuter;
-import Server.FileManagement.CSVLoader;
+import objectSpace.exceptions.*;
+import Server.utilities.CommandExecuter;
+import Server.fileManagement.CSVLoader;
 import Server.Storage;
-import Server.Terminal.Terminal;
+import Server.ui.Terminal;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, IOException, NameCityException, CapitalException {
