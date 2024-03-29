@@ -9,5 +9,5 @@ package Objects;
 public enum Government {
     KLEPTOCRACY,
     CORPORATOCRACY,
-    PATRIARCHY;
+    PATRIARCHY
 }

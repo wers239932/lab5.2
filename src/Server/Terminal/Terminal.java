@@ -1,6 +1,5 @@
 package Server.Terminal;
 
-import Server.FileManagement.FileReaderer;
 import Server.FileManagement.LineReader;
 
 import java.io.FileNotFoundException;
@@ -9,14 +8,13 @@ import java.util.Scanner;
 
 public class Terminal implements LineReader {
     public Boolean running;
-    private Scanner sc;
+    private final Scanner sc;
     public void writeLine(String line)
     {
         System.out.println(line);
     }
     public Terminal()
     {
-
         this.running=true;
         this.sc=new Scanner(System.in);
     }
@@ -39,6 +37,5 @@ public class Terminal implements LineReader {
     public void closeStream() throws IOException {
         sc.close();
     }
-
 
 }

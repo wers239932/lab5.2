@@ -13,21 +13,25 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 public class CommandExecuter {
+    private LinkedList<String> sctiptNames;
     private Boolean isRunning;
     private Storage storage;
-    private CommandArray commandArray;
-    private CommandMaker commandMaker;
-    private LineReader lineReader;
-    private Terminal terminal;
-    public CommandExecuter(Terminal terminal, LineReader lineReader)
+    private final CommandArray commandArray;
+    private final CommandMaker commandMaker;
+    private final LineReader lineReader;
+    private final Terminal terminal;
+    public CommandExecuter(Terminal terminal, LineReader lineReader,LinkedList<String> scriptNames)
     {
         this.terminal=terminal;
         this.lineReader=lineReader;
         this.commandMaker= new CommandMaker(terminal, lineReader,this);
         this.commandArray = new CommandArray();
         CommandSetter.setCommands(commandArray);
+        this.sctiptNames=scriptNames;
     }
 
     public Storage getStorage() {
@@ -61,38 +65,24 @@ public class CommandExecuter {
             if(isRunning)
                 commandLine = new ArrayList<>(Arrays.asList(commandContents.split(" +")));
             try {
-                command = (Command) commandArray.get(commandLine.get(0)).getClass().getConstructor().newInstance();
+                command = commandArray.get(commandLine.get(0)).getClass().getConstructor().newInstance();
             } catch (Exception e) {
                 if(isRunning) {
                     command = null;
-                    System.out.println("ti lox");
+                    this.terminal.writeLine("command not understood");
                 }
             }
         }
-        commandLine.remove(0);
+        if(isRunning)
+            commandLine.remove(0);
         try {
             if(isRunning)
                 this.commandMaker.addParams(command, commandLine);
-        } catch (CoordinatesException e) {
-            throw new RuntimeException(e);
-        } catch (AreaException e) {
-            throw new RuntimeException(e);
-        } catch (GovernmentException e) {
-            throw new RuntimeException(e);
-        } catch (GovernorException e) {
-            throw new RuntimeException(e);
-        } catch (HeightException e) {
-            throw new RuntimeException(e);
-        } catch (CarCodeException e) {
-            throw new RuntimeException(e);
-        } catch (PopulationException e) {
-            throw new RuntimeException(e);
-        } catch (NameCityException e) {
-            throw new RuntimeException(e);
-        } catch (CapitalException e) {
+        } catch (CoordinatesException | AreaException | GovernmentException | GovernorException | HeightException |
+                 CarCodeException | PopulationException | NameCityException | CapitalException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
-            System.out.println("sssssssnake");
+            System.out.println("ioe exception");
         }
         return command;
     }
@@ -110,10 +100,19 @@ public class CommandExecuter {
                 for(String line : commandOutput.getResponse())
                     this.terminal.writeLine(line);
             }
+            catch (NoSuchElementException e){
+                try {
+                    this.terminal.closeStream();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+                this.terminal.writeLine("Программа завершена");
+                System.exit(0);
+            }
             catch (RuntimeException | FileNotFoundException e)
             {
                 this.terminal.writeLine(e.getMessage());
-                this.terminal.writeLine("command not understood");
+                this.terminal.writeLine("command couldn't be executed");
             }
         }
         try {
@@ -121,5 +120,19 @@ public class CommandExecuter {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    public void addScriptName(String name)
+    {
+        this.sctiptNames.add(name);
+    }
+    public void removeScriptName()
+    {
+        this.sctiptNames.pop();
+    }
+    public LinkedList<String> getScriptNames()
+    {
+        return this.sctiptNames;
     }
 }

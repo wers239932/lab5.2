@@ -15,6 +15,7 @@ public class Help extends Command{
         needObject=false;
         needStorage=false;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public CommandOutput execute() {

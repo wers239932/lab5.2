@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 public class Human {
-    private LocalDateTime birthday;
+    private final LocalDateTime birthday;
 
     public Human(LocalDateTime date)
     {

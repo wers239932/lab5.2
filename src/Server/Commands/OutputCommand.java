@@ -13,6 +13,7 @@ public class OutputCommand extends Command{
         needObject=false;
         needStorage=false;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addParam(String line)

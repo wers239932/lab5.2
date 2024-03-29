@@ -13,7 +13,7 @@ import java.util.Date;
  * @author vladimir
  */
 public class Storage<T extends City> extends ArrayList<T> {
-    private Date creationDate;
+    private final Date creationDate;
     public Storage(Collection<T> collection)
     {
         super(collection);

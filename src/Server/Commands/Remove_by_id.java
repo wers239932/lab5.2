@@ -15,6 +15,7 @@ public class Remove_by_id extends Command{
         needObject=false;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)
@@ -29,6 +30,7 @@ public class Remove_by_id extends Command{
     @Override
     public CommandOutput execute() {
         ArrayList<String> response = new ArrayList<>();
+        response.add("Object removed");
         for(Object city2:storage)
         {
             City city1=(City) city2;

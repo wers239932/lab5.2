@@ -9,6 +9,7 @@ public class Exit extends Command {
         needObject=false;
         needStorage=false;
         needTerminal=false;
+        needCommandExecuter=false;
     }
 
     @Override

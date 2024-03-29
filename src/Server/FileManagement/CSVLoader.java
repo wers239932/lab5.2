@@ -11,8 +11,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class CSVLoader implements StorageLoader{
-    private FileReader reader;
-    private File file;
+    private final FileReader reader;
+    private final File file;
     public CSVLoader(File file) throws FileNotFoundException {
         this.file = file;
         this.reader=new FileReader(file);

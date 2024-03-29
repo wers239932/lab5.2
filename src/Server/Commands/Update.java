@@ -16,6 +16,7 @@ public class Update extends Command {
         needObject=true;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)

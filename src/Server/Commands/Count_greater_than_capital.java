@@ -15,6 +15,7 @@ public class Count_greater_than_capital extends Command{
         needObject=false;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)

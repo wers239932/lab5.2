@@ -15,6 +15,7 @@ public class Remove_lower extends Command{
         needObject=true;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addObject(City city)

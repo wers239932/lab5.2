@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 public class CommandMaker {
     LineReader lineReader;
-    private Terminal terminal;
-    private ArrayList<String> command;
-    private CommandExecuter commandExecuter;
+    private final Terminal terminal;
+    private final ArrayList<String> command;
+    private final CommandExecuter commandExecuter;
 
     public CommandMaker(Terminal terminal, LineReader lineReader, CommandExecuter commandExecuter){
         command=new ArrayList<>();
@@ -27,19 +27,23 @@ public class CommandMaker {
         this.commandExecuter=commandExecuter;
     }
     public void addParams(Command command, ArrayList<String> commandContents) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, NameCityException, CapitalException, IOException {
-        if(command.getNeedStorage()==true)
+        if(command.getNeedCommandExecuter())
+        {
+            command.addCommandExecuter(this.commandExecuter);
+        }
+        if(command.getNeedStorage())
         {
             command.addStorage(this.commandExecuter.getStorage());
         }
-        if(command.getNeedlines()==true)
+        if(command.getNeedlines())
         {
             command.addParam(commandContents.get(0));
         }
-        if(command.getNeedTerminal()==true)
+        if(command.getNeedTerminal())
         {
             command.addTerminal(terminal);
         }
-        if(command.getNeedObject()==true)
+        if(command.getNeedObject())
         {
             ArgumentValidator argumentValidator = new ArgumentValidator(terminal);
             String name  = getArgumentWithRules("введите название города",
@@ -80,7 +84,7 @@ public class CommandMaker {
 
             City city =new City(name,new Coordinates(x,y),area,population,deep,capital,carCode,government,new Human(date));
             command.addObject(city);
-            System.out.println("введен объект:  " + city.toString());
+            System.out.println("введен объект:  " + city);
             /*
             ArrayList<String> args = new ArrayList<String>();
             Boolean fileEmpty = false;

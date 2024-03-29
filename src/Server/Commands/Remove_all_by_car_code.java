@@ -15,6 +15,7 @@ public class Remove_all_by_car_code extends Command{
         needObject=false;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)

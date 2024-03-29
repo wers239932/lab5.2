@@ -35,7 +35,7 @@ public class City implements Comparable<City>{
      * @see Human
      */
     private Human governor; //Поле может быть null
-    private static Random randonGenerator = new Random();
+    private static final Random randonGenerator = new Random();
     public City(String name, Coordinates coordinates, Long area, int population, double metersAboveSeaLevel, Boolean capital, Long carCode, Government government, Human governor)
     {
         this.id = randonGenerator.nextInt(Integer.MAX_VALUE) + 1;
@@ -148,11 +148,11 @@ public class City implements Comparable<City>{
 
     @Override
     public String toString() {
-        return String.valueOf(this.id)+","+this.name+","+this.coordinates.toString()+","+
-                String.valueOf(this.creationDate)+","+String.valueOf(this.area)
-                +","+String.valueOf(this.population)+","+String.valueOf(this.metersAboveSeaLevel)
-                +","+String.valueOf(this.capital)+","
-                +String.valueOf(this.carCode)+","+this.government.toString()+","
+        return this.id +","+this.name+","+this.coordinates.toString()+","+
+                this.creationDate +","+ this.area
+                +","+ this.population +","+ this.metersAboveSeaLevel
+                +","+ this.capital +","
+                + this.carCode +","+this.government.toString()+","
                 +this.governor.toString();
     }
 

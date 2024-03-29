@@ -14,6 +14,7 @@ public class Sum_of_car_code extends Command{
         needObject=false;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)
@@ -22,14 +23,14 @@ public class Sum_of_car_code extends Command{
     }
     @Override
     public CommandOutput execute() {
-        Long sum=0l;
+        Long sum= 0L;
         ArrayList<String> response = new ArrayList<>();
         for(Object city2:storage)
         {
             City city1=(City) city2;
             sum+=city1.getCarCode();
         }
-        response.add("сумма carcode по всем объектам равна " + sum.toString());
+        response.add("сумма carcode по всем объектам равна " + sum);
         return new CommandOutput(response);
     }
 }

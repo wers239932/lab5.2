@@ -5,8 +5,8 @@ package Objects;
  */
 
 public class Coordinates {
-    private float x;
-    private long y; 
+    private final float x;
+    private final long y;
 
     public Coordinates(float x, long y)
     {
@@ -25,6 +25,6 @@ public class Coordinates {
     @Override
     public String toString()
     {
-        return String.valueOf(x) + "," + Long.toString(y);
+        return x + "," + y;
     }
 }

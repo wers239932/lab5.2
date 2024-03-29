@@ -7,7 +7,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ArgumentValidator{
-    private Terminal terminal;
+    private final Terminal terminal;
     public ArgumentValidator(Terminal terminal)
     {
         this.terminal=terminal;

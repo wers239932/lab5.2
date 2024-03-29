@@ -1,17 +1,20 @@
 package Server.Commands;
 
 import Objects.City;
+import Server.CommandExecuter;
 import Server.Storage;
+import Server.Terminal.CommandMaker;
 import Server.Terminal.CommandOutput;
 import Server.Terminal.Terminal;
 
 import java.io.FileNotFoundException;
 
-public abstract class Command {
+public abstract class Command { //TODO HUINA razdelit na CommandUsingElement, CommandUsingId and e.t.c.
     protected Boolean needObject;
     protected Boolean needlines;
     protected Boolean needStorage;
     protected Boolean needTerminal;
+    protected Boolean needCommandExecuter;
 
     public CommandOutput execute() throws FileNotFoundException { return null;    }
 
@@ -24,6 +27,10 @@ public abstract class Command {
     }
     public Boolean getNeedStorage(){return needStorage;}
     public Boolean getNeedTerminal(){return needTerminal;}
+    public Boolean getNeedCommandExecuter()
+    {
+        return needCommandExecuter;
+    }
     public void addParam(String param)
     {
 
@@ -37,6 +44,10 @@ public abstract class Command {
 
     }
     public void addTerminal(Terminal terminal)
+    {
+
+    }
+    public void addCommandExecuter(CommandExecuter commandExecuter)
     {
 
     }

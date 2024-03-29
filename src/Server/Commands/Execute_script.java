@@ -10,18 +10,21 @@ import Server.Terminal.Terminal;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Execute_script extends Command{
     private FileReaderer fileReaderer;
     private String scriptName;
     private Terminal terminal;
     private Storage storage;
+    private CommandExecuter commandExecuter;
     public Execute_script()
     {
         needlines=true;
         needObject=false;
         needStorage=true;
         needTerminal=true;
+        needCommandExecuter=true;
     }
     @Override
     public void addStorage(Storage storage)
@@ -38,23 +41,46 @@ public class Execute_script extends Command{
     {
         this.terminal=terminal;
     }
+    @Override
+    public void addCommandExecuter(CommandExecuter commandExecuter)
+    {
+        this.commandExecuter=commandExecuter;
+    }
 
     @Override
     public CommandOutput execute() {
-        this.fileReaderer = new CommandFileReader(scriptName);
-        try {
-            this.fileReaderer.openFile();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+        Boolean recursion=false;
+        for(String scriptNamePrevious: commandExecuter.getScriptNames())
+        {
+            if(scriptNamePrevious.equals(scriptName))
+            {
+                recursion=true;
+            }
         }
-        CommandExecuter commandExecuter = new CommandExecuter(terminal,this.fileReaderer);
-        commandExecuter.setStorage(storage);
-        commandExecuter.startSession();
-        try {
-            this.fileReaderer.closeStream();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        if(!recursion) {
+            this.commandExecuter.addScriptName(scriptName);
+            this.fileReaderer = new CommandFileReader(scriptName);
+            try {
+                this.fileReaderer.openFile();
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+            CommandExecuter commandExecuter = new CommandExecuter(terminal, this.fileReaderer, this.commandExecuter.getScriptNames()); //
+            commandExecuter.setStorage(storage);
+            commandExecuter.startSession();
+            try {
+                this.fileReaderer.closeStream();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            this.commandExecuter.removeScriptName();
+            return new CommandOutput(new ArrayList<>());
         }
-        return new CommandOutput(new ArrayList<>());
+        else
+        {
+            ArrayList<String> response = new ArrayList<>();
+            response.add("cannot execute recursively");
+            return new CommandOutput (response);
+        }
     }
 }

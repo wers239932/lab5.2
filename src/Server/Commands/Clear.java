@@ -14,6 +14,7 @@ public class Clear extends Command{
         needObject=true;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)
@@ -23,6 +24,7 @@ public class Clear extends Command{
     @Override
     public CommandOutput execute() {
         ArrayList<String> response = new ArrayList<>();
+
         for(Object city2:storage)
         {
             storage.remove(city2);

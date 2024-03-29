@@ -16,6 +16,7 @@ public class Save extends Command{
         needObject=false;
         needStorage=true;
         needTerminal=false;
+        needCommandExecuter=false;
     }
     @Override
     public void addStorage(Storage storage)
