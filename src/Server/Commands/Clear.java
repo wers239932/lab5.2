@@ -6,15 +6,11 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Clear extends Command{
+public class Clear extends Command implements CommandUsingStorage{
     private Storage storage;
     public Clear()
     {
-        needlines=true;
-        needObject=true;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

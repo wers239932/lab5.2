@@ -6,16 +6,12 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Remove_all_by_car_code extends Command{
+public class Remove_all_by_car_code extends Command implements CommandUsingLine, CommandUsingStorage{
     private Storage storage;
     private Long carCode;
     public Remove_all_by_car_code()
     {
-        needlines=true;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

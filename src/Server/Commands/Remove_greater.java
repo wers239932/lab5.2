@@ -6,16 +6,12 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Remove_greater extends Command {
+public class Remove_greater extends Command implements CommandUsingStorage, CommandUsingObject{
     private City city;
     private Storage storage;
     public Remove_greater()
     {
-        needlines=false;
-        needObject=true;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addObject(City city)

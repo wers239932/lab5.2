@@ -6,17 +6,13 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Update extends Command {
+public class Update extends Command implements CommandUsingLine, CommandUsingStorage, CommandUsingObject{
     private Storage storage;
     private int id;
     private City city;
     public Update()
     {
-        needlines=true;
-        needObject=true;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

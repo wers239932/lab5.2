@@ -5,15 +5,11 @@ import Server.Terminal.Terminal;
 
 import java.util.ArrayList;
 
-public class OutputCommand extends Command{
+public class OutputCommand extends Command implements CommandUsingLine{
     private String line;
     public OutputCommand()
     {
-        needlines=true;
-        needObject=false;
-        needStorage=false;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addParam(String line)

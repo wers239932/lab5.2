@@ -8,17 +8,11 @@ import Server.Terminal.Terminal;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Add extends Command{
+public class Add extends Command implements CommandUsingObject, CommandUsingStorage{
     private City city;
     private Storage storage;
     public Add()
-    {
-        needlines=false;
-        needObject=true;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
-    }
+    {    }
     @Override
     public void addObject(City city)
     {

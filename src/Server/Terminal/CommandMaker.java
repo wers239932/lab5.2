@@ -6,7 +6,7 @@ import Objects.Government;
 import Objects.Human;
 import Objects.Exceptions.*;
 import Server.CommandExecuter;
-import Server.Commands.Command;
+import Server.Commands.*;
 import Server.FileManagement.LineReader;
 
 import java.io.IOException;
@@ -27,23 +27,23 @@ public class CommandMaker {
         this.commandExecuter=commandExecuter;
     }
     public void addParams(Command command, ArrayList<String> commandContents) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, NameCityException, CapitalException, IOException {
-        if(command.getNeedCommandExecuter())
+        if(command instanceof CommandUsingCommandExecuter)
         {
             command.addCommandExecuter(this.commandExecuter);
         }
-        if(command.getNeedStorage())
+        if(command instanceof CommandUsingStorage)
         {
             command.addStorage(this.commandExecuter.getStorage());
         }
-        if(command.getNeedlines())
+        if(command instanceof CommandUsingLine)
         {
             command.addParam(commandContents.get(0));
         }
-        if(command.getNeedTerminal())
+        if(command instanceof CommandUsingTerminal)
         {
             command.addTerminal(terminal);
         }
-        if(command.getNeedObject())
+        if(command instanceof CommandUsingObject)
         {
             ArgumentValidator argumentValidator = new ArgumentValidator(terminal);
             String name  = getArgumentWithRules("введите название города",

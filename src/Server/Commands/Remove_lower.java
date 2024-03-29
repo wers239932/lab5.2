@@ -6,16 +6,12 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Remove_lower extends Command{
+public class Remove_lower extends Command implements CommandUsingObject, CommandUsingStorage{
     private City city;
     private Storage storage;
     public Remove_lower()
     {
-        needlines=false;
-        needObject=true;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addObject(City city)

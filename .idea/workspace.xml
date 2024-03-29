@@ -6,14 +6,33 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="some more shit">
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingCommandExecuter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingTerminal.java" afterDir="false" />
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="a little of javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/CommandUsingCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingCommandExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/CommandUsingLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/CommandUsingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/CommandUsingStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/CommandUsingTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Count_greater_than_capital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Count_greater_than_capital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Execute_script.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Execute_script.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/OutputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/OutputCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_all_by_car_code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_all_by_car_code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_by_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_by_id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_first.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_first.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_greater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_greater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Remove_lower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Remove_lower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Sum_of_car_code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Sum_of_car_code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Terminal/CommandMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Terminal/CommandMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/savefile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/savefile.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +51,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -134,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711703703979</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="a little of javadoc">
+      <created>1711728444870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711728444870</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -168,6 +199,7 @@
     <MESSAGE value="1st fix, made a class that fills command array" />
     <MESSAGE value="fixed checkers for inputting an object" />
     <MESSAGE value="some more shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="some more shit" />
+    <MESSAGE value="a little of javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="a little of javadoc" />
   </component>
 </project>

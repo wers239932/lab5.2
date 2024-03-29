@@ -8,15 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Save extends Command{
+public class Save extends Command implements CommandUsingStorage{
     private Storage storage;
     public Save()
     {
-        needlines=false;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

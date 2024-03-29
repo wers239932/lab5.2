@@ -6,16 +6,12 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Remove_by_id extends Command{
+public class Remove_by_id extends Command implements CommandUsingLine, CommandUsingStorage{
     private Storage storage;
     private int id;
     public Remove_by_id()
     {
-        needlines=true;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

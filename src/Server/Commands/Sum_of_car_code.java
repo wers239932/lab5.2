@@ -6,15 +6,11 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Sum_of_car_code extends Command{
+public class Sum_of_car_code extends Command implements CommandUsingStorage{
     private Storage storage;
     public Sum_of_car_code()
     {
-        needlines=false;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

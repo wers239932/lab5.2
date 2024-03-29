@@ -5,15 +5,11 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Show extends Command{
+public class Show extends Command implements CommandUsingStorage{
     private Storage storage;
     public Show()
     {
-        needlines=false;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

@@ -6,16 +6,12 @@ import Server.Terminal.CommandOutput;
 
 import java.util.ArrayList;
 
-public class Count_greater_than_capital extends Command{
+public class Count_greater_than_capital extends Command implements CommandUsingStorage, CommandUsingLine{
     private Storage storage;
     private Boolean capital;
     public Count_greater_than_capital()
     {
-        needlines=true;
-        needObject=false;
-        needStorage=true;
-        needTerminal=false;
-        needCommandExecuter=false;
+
     }
     @Override
     public void addStorage(Storage storage)

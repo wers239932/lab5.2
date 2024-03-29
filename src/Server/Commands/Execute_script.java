@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Execute_script extends Command{
+public class Execute_script extends Command implements CommandUsingLine, CommandUsingStorage, CommandUsingCommandExecuter, CommandUsingTerminal{
     private FileReaderer fileReaderer;
     private String scriptName;
     private Terminal terminal;
@@ -20,11 +20,7 @@ public class Execute_script extends Command{
     private CommandExecuter commandExecuter;
     public Execute_script()
     {
-        needlines=true;
-        needObject=false;
-        needStorage=true;
-        needTerminal=true;
-        needCommandExecuter=true;
+
     }
     @Override
     public void addStorage(Storage storage)

@@ -9,7 +9,7 @@ import Server.Terminal.Terminal;
 
 import java.io.FileNotFoundException;
 
-public abstract class Command { //TODO HUINA razdelit na CommandUsingElement, CommandUsingId and e.t.c.
+public abstract class Command {
     protected Boolean needObject;
     protected Boolean needlines;
     protected Boolean needStorage;
