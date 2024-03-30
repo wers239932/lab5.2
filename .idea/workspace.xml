@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="some more shit">
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingCommandExecuter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Commands/CommandUsingTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/City.java" afterDir="false" />
-    </list>
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="norm i guess" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2e2f0bab1cfababac768503d86bc0241a3dba4c9" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -94,6 +91,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +133,28 @@
       <option name="project" value="LOCAL" />
       <updated>1711703703979</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="a little of javadoc">
+      <created>1711728444870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711728444870</updated>
+    </task>
+    <task id="LOCAL-00006" summary="a little of javadoc">
+      <created>1711734682220</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711734682220</updated>
+    </task>
+    <task id="LOCAL-00007" summary="norm i guess">
+      <created>1711791392683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711791392683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -151,7 +171,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="lab5.2/commandArray_with_classes" />
                       </list>
                     </value>
                   </entry>
@@ -168,6 +188,8 @@
     <MESSAGE value="1st fix, made a class that fills command array" />
     <MESSAGE value="fixed checkers for inputting an object" />
     <MESSAGE value="some more shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="some more shit" />
+    <MESSAGE value="a little of javadoc" />
+    <MESSAGE value="norm i guess" />
+    <option name="LAST_COMMIT_MESSAGE" value="norm i guess" />
   </component>
 </project>

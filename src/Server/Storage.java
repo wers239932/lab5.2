@@ -1,6 +1,6 @@
 package Server;
 
-import Objects.City;
+import objectSpace.City;
 
 import java.util.ArrayList;
 import java.util.Collection;
