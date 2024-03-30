@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="a little of javadoc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/fileManagement/CSVLoader.java" afterDir="false" />
-    </list>
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="norm i guess" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711734682220</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="norm i guess">
+      <created>1711791392683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711791392683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -185,6 +189,7 @@
     <MESSAGE value="fixed checkers for inputting an object" />
     <MESSAGE value="some more shit" />
     <MESSAGE value="a little of javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="a little of javadoc" />
+    <MESSAGE value="norm i guess" />
+    <option name="LAST_COMMIT_MESSAGE" value="norm i guess" />
   </component>
 </project>
