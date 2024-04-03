@@ -1,6 +1,5 @@
 package ui;
 
-import Server.ServerMessageDecoder;
 import dataExchange.Message;
 
 public class ClientMessageReciever {

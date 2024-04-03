@@ -1,8 +1,7 @@
 package ui;
 
-import Server.commands.Command;
-import Server.fileManagement.LineReader;
-import Server.utilities.CommandOutput;
+import server.fileManagement.LineReader;
+import server.utilities.CommandOutput;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

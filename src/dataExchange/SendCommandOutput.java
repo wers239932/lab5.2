@@ -1,6 +1,6 @@
 package dataExchange;
 
-import Server.utilities.CommandOutput;
+import server.utilities.CommandOutput;
 
 public class SendCommandOutput extends Message{
     private CommandOutput commandOutput;

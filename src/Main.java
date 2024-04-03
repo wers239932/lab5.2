@@ -1,7 +1,11 @@
 import objectSpace.exceptions.*;
-import Server.utilities.CommandExecuter;
-import Server.fileManagement.CSVLoader;
-import Server.Storage;
+import server.Server;
+import server.ServerMessageReceiver;
+import server.utilities.CommandExecuter;
+import server.fileManagement.CSVLoader;
+import server.Storage;
+import ui.Client;
+import ui.ClientMessageReciever;
 import ui.Terminal;
 
 import java.io.File;
@@ -11,16 +15,11 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, IOException, NameCityException, CapitalException {
-        Terminal terminal=new Terminal();
-        CommandExecuter commandExecuter = new CommandExecuter(terminal,terminal, new LinkedList<>());
-        CSVLoader csvLoader;
-        try {
-            csvLoader = new CSVLoader(new File(System.getenv("SAVEFILE")));
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        Storage storage = csvLoader.loadStorage();
-        commandExecuter.setStorage(storage);
-        commandExecuter.startSession();
+        ClientMessageReciever clientMessageReciever = new ClientMessageReciever();
+        ServerMessageReceiver serverMessageReceiver = new ServerMessageReceiver();
+        Client client = new Client(clientMessageReciever);
+        Server server = new Server(serverMessageReceiver);
+        server.startSession(clientMessageReciever);
+        client.startClient(serverMessageReceiver);
     }
 }

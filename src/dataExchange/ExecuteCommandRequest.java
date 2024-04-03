@@ -1,8 +1,6 @@
 package dataExchange;
 
-import Server.commands.Command;
-import Server.utilities.CommandArray;
-import Server.utilities.CommandExecuter;
+import server.commands.Command;
 
 public class ExecuteCommandRequest extends Message{
     private Command command;

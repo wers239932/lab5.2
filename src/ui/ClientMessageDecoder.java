@@ -1,17 +1,8 @@
 package ui;
 
-import Server.commands.Command;
-import Server.utilities.CommandExecuter;
-import Server.utilities.CommandMaker;
-import Server.utilities.CommandOutput;
-import dataExchange.ExecuteCommandRequest;
 import dataExchange.Message;
 import dataExchange.SendCommandOutput;
 import dataExchange.SetCommandArrayResponse;
-import objectSpace.exceptions.*;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class ClientMessageDecoder {
     private Terminal terminal;

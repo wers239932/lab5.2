@@ -1,6 +1,6 @@
 package dataExchange;
 
-import Server.utilities.CommandArray;
+import server.utilities.CommandArray;
 
 public class SetCommandArrayResponse extends Message {
     private CommandArray commandArray;

@@ -1,18 +1,13 @@
 package ui;
 
-import Server.Server;
-import Server.ServerMessageReceiver;
-import Server.commands.Command;
-import Server.utilities.CommandArray;
-import Server.utilities.CommandOutput;
+import server.ServerMessageReceiver;
+import server.commands.Command;
+import server.utilities.CommandArray;
 import dataExchange.ExecuteCommandRequest;
 import dataExchange.GetCommandArrayRequest;
 import dataExchange.Message;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 public class Client {
@@ -24,6 +19,10 @@ public class Client {
     private Terminal terminal;
     private ClientMessageDecoder clientMessageDecoder;
     private Boolean isRunning;
+    public Client(ClientMessageReciever clientMessageReciever)
+    {
+        this.clientMessageReciever = clientMessageReciever;
+    }
     public void setCommandArray()
     {
         this.sendMessage(new GetCommandArrayRequest(this));
@@ -37,9 +36,10 @@ public class Client {
         this.terminal = new Terminal();
         this.parameterAdder = new ParameterAdder(terminal,terminal);
         this.commandCreator = new CommandCreator(parameterAdder,terminal,terminal);
-        this.clientMessageDecoder = new ClientMessageDecoder(terminal,);
+        this.clientMessageDecoder = new ClientMessageDecoder(terminal,commandCreator);
         this.serverMessageReceiver=serverMessageReceiver;
         this.setCommandArray();
+        this.startTerminal();
 
     }
     public void startTerminal()
@@ -69,7 +69,7 @@ public class Client {
             }
         }
         try {
-            this.lineReader.closeStream();
+            this.terminal.closeStream();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

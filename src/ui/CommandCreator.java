@@ -1,8 +1,8 @@
 package ui;
 
-import Server.commands.Command;
-import Server.fileManagement.LineReader;
-import Server.utilities.*;
+import server.commands.Command;
+import server.fileManagement.LineReader;
+import server.utilities.*;
 import dataExchange.ExecuteCommandRequest;
 import objectSpace.exceptions.*;
 
