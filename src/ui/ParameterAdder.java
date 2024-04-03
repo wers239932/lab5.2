@@ -1,13 +1,15 @@
-package Server.utilities;
+package ui;
 
-import ui.Terminal;
+import Server.commands.*;
+import Server.fileManagement.LineReader;
+import Server.utilities.ArgumentCheker;
+import Server.utilities.ArgumentValidator;
+import Server.utilities.CommandExecuter;
 import objectSpace.City;
 import objectSpace.Coordinates;
 import objectSpace.Government;
 import objectSpace.Human;
 import objectSpace.exceptions.*;
-import Server.commands.*;
-import Server.fileManagement.LineReader;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -17,33 +19,62 @@ import java.util.ArrayList;
 /**
  * наполняет команду необходимым содержимым: память, терминал, другие параметры
  */
-public class CommandMaker {
+public class ParameterAdder {
     LineReader lineReader;
     private final Terminal terminal;
-    private final ArrayList<String> command;
-    private final CommandExecuter commandExecuter;
 
-    public CommandMaker(Terminal terminal, LineReader lineReader, CommandExecuter commandExecuter){
-        command=new ArrayList<>();
+    public ParameterAdder(Terminal terminal, LineReader lineReader){
         this.terminal=terminal;
         this.lineReader=lineReader;
-        this.commandExecuter=commandExecuter;
     }
-    public void addParams(Command command)
-    {
-        if(command instanceof CommandUsingCommandExecuter)
-        {
-            command.addCommandExecuter(this.commandExecuter);
-        }
-        if(command instanceof CommandUsingStorage)
-        {
-            command.addStorage(this.commandExecuter.getStorage());
-        }
-        if(command instanceof CommandUsingTerminal)
-        {
-            command.addTerminal(terminal);
-        }
+    public void addParams(Command command, ArrayList<String> commandContents) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, NameCityException, CapitalException, IOException {
 
+        if(command instanceof CommandUsingLine)
+        {
+            command.addParam(commandContents.get(0));
+        }
+        if(command instanceof CommandUsingObject)
+        {
+            ArgumentValidator argumentValidator = new ArgumentValidator(terminal);
+            String name  = getArgumentWithRules("введите название города",
+                    arg -> argumentValidator.checkName(arg));
+
+            float x  =Float.parseFloat(getArgumentWithRules("введите число в формате float, первую координату",
+                    arg -> argumentValidator.checkFloat(arg)));
+            long y  =Long.parseLong(getArgumentWithRules("введите число в формате long, вторую координату",
+                    arg -> argumentValidator.checkLong(arg)));
+            Long area;
+            String area1 =getArgumentWithRules("введите площадь в формате Long, площадь должна быть больше 0",
+                    arg -> argumentValidator.checkArea(arg));
+            if(area1!="") area=Long.parseLong(area1);
+                else area=null;
+            int population = Integer.parseInt(getArgumentWithRules("введите население, должно быть больше 0",
+                arg -> argumentValidator.checkPopulation(arg)));
+            double deep = Double.parseDouble(getArgumentWithRules("введите высоту над уровнем моря в формате double",
+                    arg -> argumentValidator.checkDouble(arg)));
+            Boolean capital;
+            String capital1 = getArgumentWithRules("введите true если у города есть столица, что угодно другое в ином случае",
+                    arg -> argumentValidator.checkCapital(arg));
+            if(capital1!="") capital=Boolean.parseBoolean(capital1);
+            else capital=null;
+            Long carCode;
+            String carCode1 = getArgumentWithRules("введите carCode - целое число от 0 до 1000",
+                    arg -> argumentValidator.checkCarCode(arg));
+            if(carCode1!="") carCode=Long.parseLong(carCode1);
+            else carCode=null;
+            Government government;
+            String government1 = getArgumentWithRules("введите тип правительства: KLEPTOCRACY, CORPORATOCRACY или PATRIARCHY",
+                    arg -> argumentValidator.checkGovernment(arg));
+            if(government1!="") government=Government.valueOf(government1);
+            else government=null;
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            LocalDateTime date = LocalDateTime.parse(getArgumentWithRules("введите дату в формате yyyy-MM-dd HH:mm:ss",
+                    arg -> argumentValidator.checkGovernor(arg)), formatter);
+
+
+            City city =new City(name,new Coordinates(x,y),area,population,deep,capital,carCode,government,new Human(date));
+            command.addObject(city);
+            System.out.println("введен объект:  " + city);
             /*
             ArrayList<String> args = new ArrayList<String>();
             Boolean fileEmpty = false;
@@ -296,7 +327,7 @@ public class CommandMaker {
             command.addObject(city);
             System.out.println("введен объект:  " + city.toString());
              */
-
+        }
 
     }
     private String getArgumentWithRules(String msg, ArgumentCheker<String> checker) throws IOException {

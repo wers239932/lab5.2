@@ -19,4 +19,11 @@ public class CommandArray extends HashMap<String, Class> {
             this.put(name, commandClass);
         }
     }
+    public void removeCommand(String[] names)
+    {
+        for (String name : names)
+        {
+            this.remove(name);
+        }
+    }
 }

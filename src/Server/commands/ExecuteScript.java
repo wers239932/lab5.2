@@ -5,7 +5,7 @@ import Server.fileManagement.CommandFileReader;
 import Server.fileManagement.FileReaderer;
 import Server.Storage;
 import Server.utilities.CommandOutput;
-import Server.ui.Terminal;
+import ui.Terminal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

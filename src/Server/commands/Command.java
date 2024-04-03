@@ -4,7 +4,7 @@ import objectSpace.City;
 import Server.utilities.CommandExecuter;
 import Server.Storage;
 import Server.utilities.CommandOutput;
-import Server.ui.Terminal;
+import ui.Terminal;
 
 import java.io.FileNotFoundException;
 

@@ -6,7 +6,34 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="norm i guess" />
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="norm i guess">
+      <change afterPath="$PROJECT_DIR$/src/Server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/ServerMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/ServerMessageReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/ExecuteCommandRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/GetCommandArrayRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/MakeConnectionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/MakeConnectionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/SendCommandOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataExchange/SetCommandArrayResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ClientCommandExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ClientMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ClientMessageReciever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/CommandCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ParameterAdder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/commands/CommandUsingTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ui/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/ArgumentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/utilities/ArgumentValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/utilities/CommandArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/utilities/CommandExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/utilities/CommandMaker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,15 +45,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2e2f0bab1cfababac768503d86bc0241a3dba4c9" />
+        <entry key="$PROJECT_DIR$" value="commandArray_with_classes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,6 +99,7 @@
       <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ui" />
       <recent name="Server.Commands" />
       <recent name="Server.Terminal" />
       <recent name="" />

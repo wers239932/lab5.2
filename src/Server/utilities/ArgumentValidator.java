@@ -1,6 +1,6 @@
 package Server.utilities;
 
-import Server.ui.Terminal;
+import ui.Terminal;
 import objectSpace.Government;
 
 import java.time.LocalDateTime;

@@ -1,6 +1,8 @@
-package Server.ui;
+package ui;
 
+import Server.commands.Command;
 import Server.fileManagement.LineReader;
+import Server.utilities.CommandOutput;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -41,4 +43,11 @@ public class Terminal implements LineReader {
         sc.close();
     }
 
+    public void writeCommandOutput(CommandOutput commandOutput)
+    {
+        for(String line : commandOutput.getResponse())
+        {
+            this.writeLine(line);
+        }
+    }
 }

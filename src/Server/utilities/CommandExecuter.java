@@ -4,7 +4,7 @@ import Server.Storage;
 import objectSpace.exceptions.*;
 import Server.commands.*;
 import Server.fileManagement.LineReader;
-import Server.ui.Terminal;
+import ui.Terminal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -75,15 +75,8 @@ public class CommandExecuter {
         }
         if(isRunning)
             commandLine.remove(0);
-        try {
-            if(isRunning)
-                this.commandMaker.addParams(command, commandLine);
-        } catch (CoordinatesException | AreaException | GovernmentException | GovernorException | HeightException |
-                 CarCodeException | PopulationException | NameCityException | CapitalException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            System.out.println("ioe exception");
-        }
+        if(isRunning)
+            this.commandMaker.addParams(command);
         return command;
     }
     public void startSession()

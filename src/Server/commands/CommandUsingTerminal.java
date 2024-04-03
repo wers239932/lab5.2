@@ -1,6 +1,6 @@
 package Server.commands;
 
-import Server.ui.Terminal;
+import ui.Terminal;
 
 /**
  * интерфейс для комманд которым требуется доступ к терминалу
