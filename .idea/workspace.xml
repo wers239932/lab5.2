@@ -6,7 +6,51 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="norm i guess" />
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="ok, it didn't work. i can't make sockets because it will mean two infinite cycles of waiting in each, and i can't go in second from first">
+      <change afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingCommandArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingCommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingCommandExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CommandUsingTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CommandUsingTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/CountGreaterThanCapital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/CountGreaterThanCapital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/OutputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/OutputCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/RemoveAllByCarCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/RemoveAllByCarCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/RemoveById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/RemoveFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/RemoveFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/RemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/RemoveGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/RemoveLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/RemoveLower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/SumOfCarCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/SumOfCarCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/CSVLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/CSVSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/CSVSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/CommandFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/CommandFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/FileReaderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/FileReaderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/FileSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/FileSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/LineReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/LineReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/fileManagement/StorageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/StorageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ui/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/ArgumentCheker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/ArgumentCheker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/ArgumentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/ArgumentValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/invokerLike/CommandArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/CommandExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/CommandMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/CommandOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/utilities/CommandSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/invokerLike/CommandSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/City.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +70,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2e2f0bab1cfababac768503d86bc0241a3dba4c9" />
+        <entry key="$PROJECT_DIR$" value="commandArray_with_classes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />

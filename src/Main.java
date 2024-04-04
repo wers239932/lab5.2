@@ -1,8 +1,8 @@
 import objectSpace.exceptions.*;
-import Server.utilities.CommandExecuter;
-import Server.fileManagement.CSVLoader;
-import Server.Storage;
-import Server.ui.Terminal;
+import server.utilities.CommandExecuter;
+import server.fileManagement.CSVLoader;
+import server.Storage;
+import ui.Terminal;
 
 import java.io.File;
 import java.io.FileNotFoundException;

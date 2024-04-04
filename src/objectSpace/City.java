@@ -7,7 +7,7 @@ import java.util.*;
 
 /**
  * Класс город, объектами которого мы манипулируем
- * @see Server.Storage
+ * @see server.Storage
  */
 
 public class City implements Comparable<City>{
