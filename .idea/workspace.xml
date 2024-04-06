@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="made command help expandable">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script1" beforeDir="false" afterPath="$PROJECT_DIR$/script1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script2" beforeDir="false" afterPath="$PROJECT_DIR$/script2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/AreaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/AreaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/ArgumentCityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/ArgumentCityException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CapitalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CapitalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CarCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CarCodeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CoordinatesException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CoordinatesException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernmentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernmentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/HeightException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/HeightException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/IncorrectDataExceptoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/IncorrectDataExceptoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/NameCityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/NameCityException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/PopulationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/PopulationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/savefile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/savefile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/commands/OutputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/commands/OutputCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/fileManagement/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/CSVLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/fileManagement/CSVSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/fileManagement/CSVSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/utilities/ArgumentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/ArgumentValidator.java" afterDir="false" />
-    </list>
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="im so good at this" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712260531111</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="im so good at this">
+      <created>1712385105379</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712385105379</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -223,6 +206,7 @@
     <MESSAGE value="a little of javadoc" />
     <MESSAGE value="norm i guess" />
     <MESSAGE value="made command help expandable" />
-    <option name="LAST_COMMIT_MESSAGE" value="made command help expandable" />
+    <MESSAGE value="im so good at this" />
+    <option name="LAST_COMMIT_MESSAGE" value="im so good at this" />
   </component>
 </project>
