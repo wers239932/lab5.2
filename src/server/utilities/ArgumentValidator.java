@@ -158,10 +158,8 @@ public class ArgumentValidator{
     public boolean checkGovernor(String governor){
         try
         {
-            if(governor!="") {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-                LocalDateTime date = LocalDateTime.parse(governor,formatter);
-            }
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            LocalDateTime date = LocalDateTime.parse(governor,formatter);
         }
         catch (Exception e)
         {

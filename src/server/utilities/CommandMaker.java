@@ -91,7 +91,7 @@ public class CommandMaker {
 
             City city =new City(name,new Coordinates(x,y),area,population,deep,capital,carCode,government,new Human(date));
             command.addObject(city);
-            System.out.println("введен объект:  " + city);
+            //System.out.println("введен объект:  " + city);
             /*
             ArrayList<String> args = new ArrayList<String>();
             Boolean fileEmpty = false;

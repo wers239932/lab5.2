@@ -15,12 +15,15 @@ public class Main {
         CommandExecuter commandExecuter = new CommandExecuter(terminal,terminal, new LinkedList<>());
         CSVLoader csvLoader;
         try {
+            System.out.println(System.getenv("SAVEFILE"));
             csvLoader = new CSVLoader(new File(System.getenv("SAVEFILE")));
-        } catch (FileNotFoundException e) {
+            Storage storage = csvLoader.loadStorage();
+            commandExecuter.setStorage(storage);
+        } catch (Exception e) {
+            Storage storage = new Storage();
+            commandExecuter.setStorage(storage);
             throw new RuntimeException(e);
         }
-        Storage storage = csvLoader.loadStorage();
-        commandExecuter.setStorage(storage);
         commandExecuter.startSession();
     }
 }

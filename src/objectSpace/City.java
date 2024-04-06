@@ -166,12 +166,20 @@ public class City implements Comparable<City>{
 
     @Override
     public String toString() {
-        return this.id +","+this.name+","+this.coordinates.toString()+","+
+        if(Objects.isNull(this.government))
+            return this.id +","+this.name+","+this.coordinates.toString()+","+
                 this.creationDate +","+ this.area
                 +","+ this.population +","+ this.metersAboveSeaLevel
                 +","+ this.capital +","
-                + this.carCode +","+this.government.toString()+","
+                + this.carCode +","+"null"+","
                 +this.governor.toString();
+        else
+            return this.id +","+this.name+","+this.coordinates.toString()+","+
+                    this.creationDate +","+ this.area
+                    +","+ this.population +","+ this.metersAboveSeaLevel
+                    +","+ this.capital +","
+                    + this.carCode +","+this.government.toString()+","
+                    +this.governor.toString();
     }
 
     @Override
