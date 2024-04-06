@@ -6,13 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="im so good at this">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="pum pum pum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectSpace/Government.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/Government.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/utilities/ArgumentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/ArgumentValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/utilities/CommandMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/CommandMaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712385465803</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pum pum pum">
+      <created>1712396652307</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712396652307</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -221,7 +223,8 @@
     <MESSAGE value="norm i guess" />
     <MESSAGE value="made command help expandable" />
     <MESSAGE value="im so good at this" />
-    <option name="LAST_COMMIT_MESSAGE" value="im so good at this" />
+    <MESSAGE value="pum pum pum" />
+    <option name="LAST_COMMIT_MESSAGE" value="pum pum pum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
