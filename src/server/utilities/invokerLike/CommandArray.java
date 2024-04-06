@@ -2,6 +2,7 @@ package server.utilities.invokerLike;
 
 import server.commands.*;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -20,6 +21,11 @@ public class CommandArray {
         {
             map.put(name, commandClass);
         }
+    }
+    public void addCommand(String[] names, Class<? extends Command> commandClass, ArrayList<Boolean> data)
+    {
+        this.addCommand(names,commandClass);
+        CommandMetaData.addCommandData(commandClass,data);
     }
     public void setCommands()
     {

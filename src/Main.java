@@ -2,6 +2,7 @@ import objectSpace.exceptions.*;
 import server.utilities.CommandExecuter;
 import server.fileManagement.CSVLoader;
 import server.Storage;
+import server.utilities.invokerLike.CommandMetaData;
 import ui.Terminal;
 
 import java.io.File;
@@ -11,6 +12,7 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, IOException, NameCityException, CapitalException {
+        CommandMetaData.setMetaData();
         Terminal terminal = new Terminal();
         CommandExecuter commandExecuter = new CommandExecuter(terminal,terminal, new LinkedList<>());
         CSVLoader csvLoader;

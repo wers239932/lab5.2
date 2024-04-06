@@ -118,7 +118,7 @@ public class ArgumentValidator{
     public boolean checkCapital(String capital){
         try
         {
-            if(capital!="") {
+            if(!capital.isBlank()) {
                 Boolean y = Boolean.parseBoolean(capital);
             }
         }
@@ -131,7 +131,7 @@ public class ArgumentValidator{
     public boolean checkCarCode(String carcode){
         try
         {
-            if(carcode!="") {
+            if(!carcode.isBlank()) {
                 Long carcode1=Long.parseLong(carcode);
                 if(carcode1<=0 || carcode1>1000) return false;
             }
@@ -145,7 +145,7 @@ public class ArgumentValidator{
     public boolean checkGovernment(String government){
         try
         {
-            if(government!="") {
+            if(!government.isBlank()) {
                 Government government1 = Government.valueOf(government);
             }
         }

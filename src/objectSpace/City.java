@@ -234,7 +234,7 @@ public class City implements Comparable<City>{
                 Long carCode;
                 Government government;
                 Human governor;
-                if(name=="") throw new NameCityException("имя должно быть строкой, не должно быть null",1);
+                if(name.isBlank()) throw new NameCityException("имя должно быть строкой, не должно быть null",1);
                 try {
                     float x;
                     long y;

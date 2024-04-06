@@ -1,5 +1,6 @@
 package server.utilities;
 
+import server.utilities.invokerLike.CommandMetaData;
 import ui.Terminal;
 import objectSpace.City;
 import objectSpace.Coordinates;
@@ -30,27 +31,28 @@ public class CommandMaker {
         this.commandExecuter=commandExecuter;
     }
     public void addParams(Command command, ArrayList<String> commandContents) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, NameCityException, CapitalException, IOException {
-        if(command instanceof CommandUsingCommandExecuter)
+        ArrayList<Boolean> data = CommandMetaData.getData(command.getClass());
+        if(data.get(1))
         {
             command.addCommandExecuter(this.commandExecuter);
         }
-        if(command instanceof CommandUsingCommandArray)
+        if(data.get(0))
         {
             command.addCommandArray(this.commandExecuter.getCommandArray());
         }
-        if(command instanceof CommandUsingStorage)
+        if(data.get(4))
         {
             command.addStorage(this.commandExecuter.getStorage());
         }
-        if(command instanceof CommandUsingLine)
+        if(data.get(2))
         {
             command.addParam(commandContents.get(0));
         }
-        if(command instanceof CommandUsingTerminal)
+        if(data.get(5))
         {
             command.addTerminal(terminal);
         }
-        if(command instanceof CommandUsingObject)
+        if(data.get(3))
         {
             ArgumentValidator argumentValidator = new ArgumentValidator(terminal);
             String name  = getArgumentWithRules("введите название города",
