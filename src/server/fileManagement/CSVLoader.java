@@ -41,11 +41,12 @@ public class CSVLoader implements StorageLoader{
     }
     @Override
     public Storage<City> loadStorage() throws IOException, CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, NameCityException, CapitalException {
-        Storage<City> storage = new Storage<City>();
-        String line = readLine();
+        Storage<City> storage = new Storage<>();
+        String line= readLine();
         line = readLine();
-        while(line != null)
+        while(line != null && !line.isEmpty() && !line.isBlank())
         {
+
             storage.add(City.parseCity(line.trim().split(",")));
             line = readLine();
         }

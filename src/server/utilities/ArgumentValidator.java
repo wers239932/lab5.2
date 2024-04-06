@@ -6,6 +6,7 @@ import objectSpace.Government;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 /**
  * проверка типов данных при вводе различных типов данных
@@ -30,7 +31,7 @@ public class ArgumentValidator{
         return true;
     }
     public boolean checkName(String nameToCheck){
-        if(nameToCheck=="")
+        if(Objects.equals(nameToCheck, ""))
         {
             this.terminal.writeLine("название должно быть не null");
             return false;

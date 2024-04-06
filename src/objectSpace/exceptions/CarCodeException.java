@@ -1,7 +1,6 @@
 package objectSpace.exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с carCode
- * @see
  * @author vladimir
  */
 public class CarCodeException extends ArgumentCityException{

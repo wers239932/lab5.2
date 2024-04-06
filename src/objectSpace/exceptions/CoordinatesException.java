@@ -1,7 +1,6 @@
 package objectSpace.exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с координатами
- * @see
  * @author vladimir
  */
 public class CoordinatesException extends ArgumentCityException{

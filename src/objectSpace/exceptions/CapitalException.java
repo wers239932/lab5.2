@@ -1,7 +1,6 @@
 package objectSpace.exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку со столицей
- * @see
  * @author vladimir
  */
 public class CapitalException extends ArgumentCityException{

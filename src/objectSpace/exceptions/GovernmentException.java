@@ -1,7 +1,6 @@
 package objectSpace.exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с правительством
- * @see
  * @author vladimir
  */
 public class GovernmentException extends ArgumentCityException{

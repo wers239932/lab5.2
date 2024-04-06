@@ -19,11 +19,7 @@ public class Clear extends Command implements CommandUsingStorage{
     @Override
     public CommandOutput execute() {
         ArrayList<String> response = new ArrayList<>();
-
-        for(Object city2:storage)
-        {
-            storage.remove(city2);
-        }
+        storage.clear();
         return new CommandOutput(response);
     }
 }

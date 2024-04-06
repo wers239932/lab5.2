@@ -2,7 +2,6 @@ package objectSpace.exceptions;
 
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с названием города
- * @see
  * @author vladimir
  */
 

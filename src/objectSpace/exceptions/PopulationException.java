@@ -1,7 +1,6 @@
 package objectSpace.exceptions;
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с населением
- * @see
  * @author vladimir
  */
 public class PopulationException extends ArgumentCityException{

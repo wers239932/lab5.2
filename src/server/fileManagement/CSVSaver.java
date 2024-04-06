@@ -18,7 +18,7 @@ public class CSVSaver implements FileSaver{
     private Queue<String> createContsentsOfFile(Collection<City> storage)
     {
         Queue<String> contents = new LinkedList<>();
-        contents.add("id,name,coordinate_x,coordinate_y,creationDate,area,population,metersAboveSeaLevel,capital,carCode,government,governor_birthday\n");
+        contents.add("id,name,coordinate_x,coordinate_y,creationDate,area,population,metersAboveSeaLevel,capital,carCode,government,governor_birthday");
         for(City city : storage)
         {
             contents.add(city.toString());
@@ -36,8 +36,9 @@ public class CSVSaver implements FileSaver{
         Queue<String> contents = createContsentsOfFile(cities);
         for(String line : contents)
         {
-            line=line+"\n";
             outputStream.write(line.getBytes());
+            outputStream.write("\n".getBytes());
+
             outputStream.flush();
         }
         outputStream.close();

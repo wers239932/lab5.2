@@ -19,6 +19,7 @@ public class OutputCommand extends Command implements CommandUsingLine{
     public CommandOutput execute() {
         ArrayList<String> response = new ArrayList<>();
         response.add(line);
+        response.add("кто прочитал тот здохнет");
         return new CommandOutput(response);
     }
 }

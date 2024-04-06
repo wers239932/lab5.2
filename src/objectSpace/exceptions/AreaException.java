@@ -2,7 +2,6 @@ package objectSpace.exceptions;
 
 /**
  * Класс расширяющий ArgumentCityException означающий ошибку с площадью
- * @see
  * @author vladimir
  */
 public class AreaException extends ArgumentCityException{

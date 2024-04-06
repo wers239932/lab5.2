@@ -187,7 +187,6 @@ public class City implements Comparable<City>{
     /**
      * парсит набор строк в город
      * @param args
-     * @return
      * @throws CoordinatesException
      * @throws NameCityException
      * @throws AreaException
@@ -236,7 +235,7 @@ public class City implements Comparable<City>{
                     coordinates = new Coordinates(x, y);
                     }
                 catch (Exception e) {
-                    throw new CoordinatesException("координаты быть в формате (long x, Integer y), y не должен быть null", 2);
+                    throw new CoordinatesException("coords быть в формате (long x, Integer y), y не должен быть null", 2);
                 }
                 try {
                     creationDate=ZonedDateTime.parse(args[4].trim());
@@ -270,7 +269,7 @@ public class City implements Comparable<City>{
                 }
                 try {
 
-                    if(!args[8].trim().equals(""))
+                    if(!args[8].trim().equals("null"))
                         capital = Boolean.parseBoolean(args[8].trim());
                     else capital = null;
                 }
@@ -280,10 +279,11 @@ public class City implements Comparable<City>{
                 }
                 try {
 
-                    if(!args[9].trim().equals(""))
+                    if(!args[9].trim().equals("null")) {
                         carCode = Long.parseLong(args[9].trim());
+                        if (carCode <= 0 || carCode > 1000) throw new Exception();
+                    }
                     else carCode=null;
-                    if(carCode<=0 || carCode>1000) throw new Exception();
                 }
                 catch (Exception e)
                 {
@@ -291,7 +291,7 @@ public class City implements Comparable<City>{
                 }
                 try {
 
-                    if(!args[10].trim().equals(""))
+                    if(!args[10].trim().equals("null"))
                         government = Government.valueOf(args[10].trim());
                     else government=null;
                 }

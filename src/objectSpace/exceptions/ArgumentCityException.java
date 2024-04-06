@@ -2,7 +2,6 @@ package objectSpace.exceptions;
 
 /**
  * Абстрактный класс обибок при вводе неверных типов данных при создании объекта типа City
- * @see
  * @author vladimir
  */
 

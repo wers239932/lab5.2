@@ -11,7 +11,7 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws CoordinatesException, AreaException, GovernmentException, GovernorException, HeightException, CarCodeException, PopulationException, IOException, NameCityException, CapitalException {
-        Terminal terminal=new Terminal();
+        Terminal terminal = new Terminal();
         CommandExecuter commandExecuter = new CommandExecuter(terminal,terminal, new LinkedList<>());
         CSVLoader csvLoader;
         try {
