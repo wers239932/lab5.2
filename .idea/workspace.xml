@@ -6,8 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="pum pum pum">
+    <list default="true" id="634bfbc1-71fc-47db-94e3-81b67aede326" name="Changes" comment="я сдал примерно эту версию">
+      <change afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CannotReadCityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/IdException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/AreaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/AreaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/ArgumentCityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/ArgumentCityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CapitalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CapitalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CarCodeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CarCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/CoordinatesException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/CoordinatesException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernmentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernmentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/GovernorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/HeightException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/HeightException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/NameCityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/NameCityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectSpace/exceptions/PopulationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectSpace/exceptions/PopulationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/savefile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/savefile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/utilities/CommandExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utilities/CommandExecuter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +37,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b582a9ca2848e61d84124942ff9b7cec3b4eb2e6" />
+        <entry key="$PROJECT_DIR$" value="a1f85a4c7778ee33a32f77492142c2bff919b503" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +73,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/vladimir/Desktop/lab5.2",
+    "last_opened_file_path": "C:/Users/vladimir/Desktop/итмо/прога/программирование/лаба 5/lab5.2 — копия/src/objectSpace",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -66,6 +83,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2 — копия\src\objectSpace" />
+      <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2 — копия\src\objectSpace\exceptions" />
       <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2\src\Server\FileManagement" />
       <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2\src\Objects" />
     </key>
@@ -74,6 +93,8 @@
       <recent name="C:\Users\vladimir\Desktop\итмо\прога\программирование\лаба 5\lab5.2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="objectSpace.exceptions" />
+      <recent name="objectSpace" />
       <recent name="Server.Commands" />
       <recent name="Server.Terminal" />
       <recent name="" />
@@ -202,7 +223,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lab5.2/almost_there" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -224,7 +245,8 @@
     <MESSAGE value="made command help expandable" />
     <MESSAGE value="im so good at this" />
     <MESSAGE value="pum pum pum" />
-    <option name="LAST_COMMIT_MESSAGE" value="pum pum pum" />
+    <MESSAGE value="я сдал примерно эту версию" />
+    <option name="LAST_COMMIT_MESSAGE" value="я сдал примерно эту версию" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

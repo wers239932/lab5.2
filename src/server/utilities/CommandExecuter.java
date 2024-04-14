@@ -51,41 +51,35 @@ public class CommandExecuter {
     private String getLine() throws IOException {
         return lineReader.readLine();
     }
-    public Command makeCommand()
-    {
+    public Command makeCommand() throws Exception {
         Command command = null;
         ArrayList<String> commandLine = null;
-        while (command == null && isRunning) {
+        while (command == null) {
             String commandContents = null;
             try {
                 commandContents = this.getLine();
             } catch (IOException e) {
-                isRunning=false;
                 throw new RuntimeException(e);
             }
-            if(commandContents==null) isRunning=false;
-            if(isRunning)
-                commandLine = new ArrayList<>(Arrays.asList(commandContents.split(" +")));
+            if(commandContents==null) throw new Exception();
+            commandLine = new ArrayList<>(Arrays.asList(commandContents.split(" +")));
             try {
                 command = (Command) commandArray.get(commandLine.get(0)).getConstructor().newInstance();
             } catch (Exception e) {
-                if(isRunning) {
-                    command = null;
-                    this.terminal.writeLine("command not understood");
-                }
+                command = null;
+                this.terminal.writeLine("command not understood");
             }
         }
-        if(isRunning)
-            commandLine.remove(0);
+        commandLine.remove(0);
         try {
-            if(isRunning)
-                this.commandMaker.addParams(command, commandLine);
+            this.commandMaker.addParams(command, commandLine);
         } catch (CoordinatesException | AreaException | GovernmentException | GovernorException | HeightException |
                  CarCodeException | PopulationException | NameCityException | CapitalException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
             System.out.println("ioe exception");
         }
+
         return command;
     }
     public void startSession()
@@ -96,11 +90,18 @@ public class CommandExecuter {
         {
             try {
                 command = makeCommand();
-                CommandOutput commandOutput=new CommandOutput(new ArrayList<>());
-                if(isRunning)
-                    commandOutput = command.execute();
+                CommandOutput commandOutput;
+                commandOutput = command.execute();
                 for(String line : commandOutput.getResponse())
                     this.terminal.writeLine(line);
+            }
+            catch (IncorrectDataExceptoin e)
+            {
+                this.terminal.writeLine("command not understood");
+            }
+            catch (CannotReadCityException e)
+            {
+                this.terminal.writeLine("конец файла");
             }
             catch (NoSuchElementException e){
                 try {
@@ -108,13 +109,14 @@ public class CommandExecuter {
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
-                this.terminal.writeLine("Программа завершена");
                 System.exit(0);
             }
             catch (RuntimeException | FileNotFoundException e)
             {
                 this.terminal.writeLine(e.getMessage());
-                this.terminal.writeLine("command couldn't be executed");
+                this.terminal.writeLine("команда не выполнена");
+            } catch (Exception e) {
+                isRunning=false;
             }
         }
         try {
