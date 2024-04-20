@@ -292,7 +292,7 @@ public class CommandMaker {
 
 
     }
-    private String getArgumentWithRules(String msg, ArgumentCheker<String> checker) throws IOException {
+    private String getArgumentWithRules(String msg, ArgumentChecker<String> checker) throws IOException {
         String arg = "";
         this.terminal.writeLine(msg);
         arg = this.lineReader.readLine();

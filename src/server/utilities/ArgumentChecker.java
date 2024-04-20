@@ -1,5 +1,5 @@
 package server.utilities;
 @FunctionalInterface
-public interface ArgumentCheker<String> {
+public interface ArgumentChecker<String> {
     boolean check(String arg);
 }
